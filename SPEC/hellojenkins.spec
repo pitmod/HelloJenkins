@@ -18,12 +18,12 @@ Some bloody jenkins description about staff
 %install
 install -m 0755 -d $RPM_BUILD_ROOT/etc/hellojenkins
 install -m 0755 hellojenkins.sh $RPM_BUILD_ROOT/etc/hellojenkins/hellojenkins.sh
-install -m 0644 README.md $RPM_BUILD_ROOT/etc/hellojenkins/README.md
+install -m 0644 README.md $RPM_BUILD_ROOT/etc/hellojenkins/config.txt
 
 %files
 /etc/hellojenkins
 /etc/hellojenkins/hellojenkins.sh
-/etc/hellojenkins/README.md
+/etc/hellojenkins/config.txt
 
 %changelog
 * Sun Aug 4 2019 Pit 1.0.0
